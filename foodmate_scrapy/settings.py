@@ -25,10 +25,10 @@ xmfl1 = '4'
 jibie = ''
 
 #通报开始时间 '2015-01-12'
-timebegin = '2016-01-01'
+timebegin = '2017-01-01'
 
 #通报结束时间
-scrapy_end_time = '2017-01-01'
+scrapy_end_time = '2021-04-16'
 
 catidname = ''
 
