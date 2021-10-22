@@ -9,30 +9,54 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+#搜索条件
+title = "芝麻油"
 
-title = "芝麻油-污染物-全部"
-
+#footmate
 #产品名称
 kw = '芝麻油'
-
 #判断结果 '1'-合格 '2'-不合格 ''全部
-hege = '2'
-
+hege = ''
 #不合格原因 '1'-质量指标 '2'-微生物 ''-请选择（全选）
-xmfl1 = '4'
-
+xmfl1 = ''
 #抽检级别 ''-全部 '1'-国抽 '2'-省抽
 jibie = ''
-
 #通报开始时间 '2015-01-12'
-timebegin = '2017-01-01'
-
+timebegin = '2021-04-01'
 #通报结束时间
-scrapy_end_time = '2021-04-16'
-
+scrapy_end_time = '2021-04-02'
 catidname = ''
-
 page = 1
+#一次的搜索周期，单位天
+addDay = 1
+
+#eshian
+pageNo = "0"
+#发布开始日期
+releaseTime = "2015-12-30"
+#发布结束日期
+releaseTime1= "2021-04-16"
+#产品名称
+typeName= "芝麻油"
+belowStandard= ""
+brand= ""
+#发布开始日期
+releaseTimeX= "2015-12-30"
+#发布结束日期
+releaseTime1X= "2021-04-16"
+brandX= ""
+#产品名称
+typeNameX= "芝麻油"
+belowStandardX= ""
+pTypeName= ""
+pTypeId= ""
+diquName= "全国"
+diquId= "1"
+#不合格分类
+buhegeName= "污染物"
+#21-感官 22-标签标识.... 26-污染物 27-农药残留 28-兽药残留
+buhegeId= "26"
+territories= "0"
 
 BOT_NAME = 'foodmate_scrapy'
 
@@ -62,7 +86,7 @@ ROBOTSTXT_OBEY = True
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 2
+DOWNLOAD_DELAY = 5
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
