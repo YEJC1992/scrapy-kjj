@@ -13,18 +13,18 @@ import eshian_config
 import rasff_config
 
 config = {
-    'csv_source': datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".csv",
-    'csv_format': datetime.datetime.now().strftime('%Y%m%d%H%M%S') + "_format.csv",
+    'csv_source': "国内15年1-3月国外2020年1-3月"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".csv",
+    'csv_format': "国内15年1-3月国外2020年1-3月"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + "_format.csv",
 }
 
 with open('config.json', 'w') as f:
     json.dump(config, f)
 
 time_str = "2015-01-01"
-time_end = "2015-12-31"
+time_end = "2015-03-31"
 
 time_str2 = "01-01-2020 00:00:00"
-time_end2 = "31-12-2020 23:59:59"
+time_end2 = "31-03-2020 23:59:59"
 
 process = CrawlerProcess(get_project_settings())
 
