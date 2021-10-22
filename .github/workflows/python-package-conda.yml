@@ -23,7 +23,7 @@ jobs:
         pip install scrapy pandas numpy
     - name: Start scrapy
       run: |
-        scrapy crawl footmate
+        python main.py
     - name: Upload scrapy data
       run: |
         git config --local user.email "491981718@qqcom"
