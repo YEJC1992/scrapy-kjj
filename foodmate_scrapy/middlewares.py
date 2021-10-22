@@ -6,7 +6,8 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-
+import random
+import time
 
 class FoodmateScrapySpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -69,6 +70,9 @@ class FoodmateScrapyDownloaderMiddleware(object):
         return s
 
     def process_request(self, request, spider):
+        # 随机延时
+        delay  = random.randint(0,10)
+        time.sleep(delay)
         # Called for each request that goes through the downloader
         # middleware.
 
