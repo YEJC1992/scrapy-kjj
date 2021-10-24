@@ -53,7 +53,7 @@ class EshianSpider(scrapy.Spider):
                     './td')[2].xpath('string(.)').extract()[0]
                 item['生产商'] = tr_ele.xpath(
                     './td')[3].xpath('string(.)').extract()[0]
-                print("====>" + str(len(tr_ele.xpath('./td')[4].xpath('./table/tbody/tr'))))
+                #print("====>" + str(len(tr_ele.xpath('./td')[4].xpath('./table/tbody/tr'))))
                 item['检测项目'] = ""
                 item['检测结果'] = ""
                 for tr2 in tr_ele.xpath('./td')[4].xpath('./table/tbody/tr'):
