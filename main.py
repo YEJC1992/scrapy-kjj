@@ -21,7 +21,7 @@ with open('config.json', 'w') as f:
     json.dump(config, f)
 
 time_str = "2021-01-01"
-time_end = "2021-02-01"
+time_end = "2021-01-15"
 
 # time_str2 = "01-12-2021 00:00:00"
 # time_end2 = "31-12-2021 23:59:59"

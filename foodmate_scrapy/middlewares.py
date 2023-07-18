@@ -71,7 +71,7 @@ class FoodmateScrapyDownloaderMiddleware(object):
 
     def process_request(self, request, spider):
         # 随机延时
-        delay  = random.randint(2,10)
+        delay  = random.randint(10,20)
         time.sleep(delay)
         # Called for each request that goes through the downloader
         # middleware.

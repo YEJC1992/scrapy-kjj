@@ -19,7 +19,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1938',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 },
 {
@@ -41,7 +41,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1936',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 ,
@@ -64,7 +64,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1923',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 ,
@@ -87,7 +87,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1912',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 ,
@@ -110,7 +110,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1907',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 ,
@@ -133,7 +133,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1894',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 ,
@@ -156,7 +156,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1874',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 ,
@@ -179,7 +179,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1982',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 
@@ -203,7 +203,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1804',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 ,
@@ -226,7 +226,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1799',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 ,
@@ -249,7 +249,7 @@ footmate_config = [#贝类 搜索时间自定义
         "catidname": '1792',
         "page": 1,
         # 一次的搜索周期，单位天
-        "addDay": 30,
+        "addDay": 15,
     }
 }
 #1938,1936,1923,1912,1907,1902,1894,1874,1982,1804,1799,1792
