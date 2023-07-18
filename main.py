@@ -13,8 +13,8 @@ import eshian_config
 import rasff_config
 
 config = {
-    'csv_source': "国内23年"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".csv",
-    'csv_format': "国内23年"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + "_format.csv",
+    'csv_source': "3-4国内23年"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".csv",
+    'csv_format': "3-4国内23年"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + "_format.csv",
 }
 
 with open('config.json', 'w') as f:
@@ -30,7 +30,7 @@ process = CrawlerProcess(get_project_settings())
 
 
 #[1,2] 前爬第1、2个条件
-process_job = [1,2]
+process_job = [3,4]
 start_job = 1
 for config in foodmate_config.footmate_config:
     if start_job >= process_job[0] and start_job <= process_job[1]:
