@@ -13,15 +13,15 @@ import eshian_config
 import rasff_config
 
 config = {
-    'csv_source': "3-4国内23年"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".csv",
-    'csv_format': "3-4国内23年"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + "_format.csv",
+    'csv_source': "3-4国内22年"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".csv",
+    'csv_format': "3-4国内22年"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + "_format.csv",
 }
 
 with open('config.json', 'w') as f:
     json.dump(config, f)
 
-time_str = "2023-01-01"
-time_end = "2023-08-01"
+time_str = "2022-01-01"
+time_end = "2023-01-01"
 
 # time_str2 = "01-12-2021 00:00:00"
 # time_end2 = "31-12-2021 23:59:59"
