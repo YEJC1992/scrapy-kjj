@@ -27,8 +27,9 @@ class FootmateSpider(scrapy.Spider):
         try:
             # // 全局 ./当前节点
             table = response.xpath('//table[@bordercolordark]')[0]
-            last_td = response.xpath('//td[last()]')
-            totalPage = last_td[-1].xpath('./b[2]/text()').extract_first()
+            #最后一个<b>标签的内容
+            totalPage = response.xpath('//b[last()]/text()').extract_first()
+            # totalPage = last_td[-1].xpath('./b[2]/text()').extract_first()
             tr_list = table.xpath('./tr')
             logging.info("Reponse totalPage:"+str(totalPage)+" ,reponse page:" + str(self.config['params']['page'])+", data size:"+str(len(tr_list)-1) + " in condition,catidname:" +
                          self.config['params']['catidname'] + ",hege=" + self.config['params']['hege'] + ",time:" + self.config['params']['timebegin'] + "-" + self.timeend)
