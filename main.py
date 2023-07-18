@@ -13,31 +13,31 @@ import eshian_config
 import rasff_config
 
 config = {
-    'csv_source': "国内21年1-3月"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".csv",
-    'csv_format': "国内21年1-3月"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + "_format.csv",
+    'csv_source': "国内21年1-6月"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + ".csv",
+    'csv_format': "国内21年1-6月"+datetime.datetime.now().strftime('%Y%m%d%H%M%S') + "_format.csv",
 }
 
 with open('config.json', 'w') as f:
     json.dump(config, f)
 
 time_str = "2021-01-01"
-time_end = "2021-04-01"
+time_end = "2021-06-01"
 
 # time_str2 = "01-12-2021 00:00:00"
 # time_end2 = "31-12-2021 23:59:59"
 
 process = CrawlerProcess(get_project_settings())
 
-config = foodmate_config.footmate_config[0]
-config['params']['timebegin'] = time_str
-config['params']['scrapy_end_time'] = time_end
-process.crawl(FootmateSpider, config=config)
 
-
-# for config in foodmate_config.footmate_config:
-#     config['params']['timebegin'] = time_str
-#     config['params']['scrapy_end_time'] = time_end
-#     process.crawl(FootmateSpider, config=config)
+#[1,2] 前爬第1、2个条件
+process_job = [1,2]
+start_job = 1
+for config in foodmate_config.footmate_config:
+    if start_job >= process_job[0] and start_job <= process_job[1]:
+        config['params']['timebegin'] = time_str
+        config['params']['scrapy_end_time'] = time_end
+        process.crawl(FootmateSpider, config=config)
+    start_job = start_job + 1
 
 # for config in eshian_config.eshian_config:
 #     config['post']['releaseTime'] = time_str
